@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "About";
+    
+}
+<h2>About</h2>
+@{
+    foreach (var item in (string[])TempData["var1"])
+    {
+        <h4>@item</h4>
+    }
+}
+
+@{
+    foreach (var itm in (List<string>)TempData["var2"])
+    {
+        <h4>@itm</h4>
+    }
+}
